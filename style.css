@@ -1,33 +1,69 @@
+/* Set the overall background and center the card */
 body {
+  margin: 0;
   font-family: sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #2b29a0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-body.dark {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-
+/* Card styling for the main container */
 main {
-  margin-top: 5rem;
+  background-color: #fefefe;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 300px;
 }
 
-.timer {
+/* Timer display */
+#time-display {
   font-size: 4rem;
   margin: 1rem 0;
 }
 
-.controls button, .actions button, #toggle-theme {
-  margin: 0.5rem;
-  padding: 0.6rem 1rem;
+/* Control button layout */
+.controls button,
+.actions button,
+#toggle-theme {
+  margin: 0.4rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
 }
 
+.controls button:hover,
+.actions button:hover,
+#toggle-theme:hover {
+  background: #e8e8e8;
+}
+
+/* Encouraging message */
 #message {
+  margin-top: 1.5rem;
   font-style: italic;
-  margin-top: 2rem;
-  transition: opacity 0.5s;
+  color: #444;
+}
+
+/* Dark mode toggle */
+body.dark main {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark #message {
+  color: #ccc;
+}
+
+body.dark button {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
 }
