@@ -2,7 +2,9 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #2b29a0; 
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +13,7 @@ body {
 
 /* Card styling for the main container */
 main {
-  background-image: url('bg.jpg');
+  background-color: #fefefe;
   padding: 3rem 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
