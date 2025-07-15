@@ -9,6 +9,19 @@ const resetBtn = document.getElementById("reset");
 const message = document.getElementById("message");
 const themeToggle = document.getElementById("toggle-theme");
 
+// Toggle dark mode
+document.body.classList.toggle(
+  "dark",
+  localStorage.getItem("theme") === "dark"
+);
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
+});
+
 const messages = [
   "You got this! 💪",
   "Keep going! 📝",
