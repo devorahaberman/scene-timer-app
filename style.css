@@ -2,13 +2,27 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-image: url('bg.jpg');
+  background-image: url('your-image.jpg'); /* or your image URL */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Create the overlay effect */
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0); /* default: no overlay */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  transition: background-color 0.4s;
+}
+
+/* When in dark mode, darken the background with a transparent overlay */
+body.dark .background-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* adjust darkness as needed */
 }
 
 /* Card styling for the main container */
