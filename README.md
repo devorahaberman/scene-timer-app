@@ -31,7 +31,3 @@ Background Photo by <a href="https://unsplash.com/@henry_be?utm_content=creditCo
 ```bash
 git clone https://github.com/devorahaberman/scene-timer-app.git
 cd scene-timer-app
-
-
-
-
