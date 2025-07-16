@@ -84,7 +84,8 @@ body.dark button {
 
 footer {
   background-color: #ffffff;
-  color: #333;
+  color: #ffffff;
+  text-emphasis-color: #ffffff;
   text-align: center;
   padding: 1rem;
   position: fixed;     
